@@ -37,10 +37,10 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              Full Stack Developer building scalable systems using Python (Fast API, Flask) in both monolithic and microservice architectures. Skilled in designing RESTful and asynchronous APIs, integrating third-party services, and working with relational (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) databases.
+              Full Stack Developer building scalable systems using Python (FastAPI, Flask) and JavaScript (React, Node.js) in both monolithic and microservice architectures. Skilled in designing RESTful and asynchronous APIs, integrating third-party services, and working with relational (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) databases.
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-              Familiar with Docker, CI/CD pipelines, Celery, and authentication protocols like OAuth2 and JWT. Led backend development for logistics and HRMS platforms serving enterprise clients. Thrive in Agile teams, with strong focus on performance, security, and maintainable code.
+              Familiar with Docker, CI/CD pipelines, and authentication protocols like OAuth2 and JWT. Led backend development for logistics and HRMS platforms serving enterprise clients. Thrive in Agile teams, with strong focus on performance, security, and maintainable code.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -107,37 +107,37 @@ const About = () => {
           >
             <div className="relative z-10 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
-                Professional Interests
+                Technical Expertise
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary-light mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Building scalable backend systems and APIs
+                    <strong>Backend:</strong> Python (FastAPI, Flask), Node.js (Express, NestJS)
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-light mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Database design and optimization
+                    <strong>Frontend:</strong> React, Next.js, Vue.js, TypeScript
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-light mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Microservice architecture
+                    <strong>Database:</strong> PostgreSQL, MySQL, MongoDB, Redis
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-light mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Cloud infrastructure and DevOps
+                    <strong>DevOps:</strong> Docker, Kubernetes, CI/CD, Microservices
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-light mr-2">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Modern frontend development with React
+                    <strong>Mobile:</strong> React Native (cross-platform development)
                   </span>
                 </li>
               </ul>

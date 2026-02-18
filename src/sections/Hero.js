@@ -17,10 +17,19 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="order-2 lg:order-1"
           >
-            <motion.p
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
+              className="inline-flex items-center gap-2 bg-green-500/10 text-green-600 dark:text-green-400 px-3 py-1.5 rounded-full text-sm font-medium mb-3"
+            >
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              Available for Remote Full-Time Roles
+            </motion.div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
               className="text-primary-light font-medium mb-2"
             >
               Hello, I'm
@@ -47,7 +56,7 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-gray-600 dark:text-gray-300 text-lg mb-8 max-w-lg"
             >
-              Full Stack Developer building scalable systems using Python (Fast API, Flask) in both monolithic and microservice architectures.
+              Specialized in <span className="font-semibold text-primary-light">Python (FastAPI, Flask)</span> and <span className="font-semibold text-primary-light">JavaScript (React, Node.js)</span> for building scalable full-stack applications.
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}

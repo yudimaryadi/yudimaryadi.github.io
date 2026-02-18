@@ -49,7 +49,7 @@ const Experience = () => {
     {
       title: 'Senior Full-Stack Engineer',
       company: 'Tjakrabirawa Teknologi Indonesia',
-      period: 'May 2025 – Present', // ubah sesuai tanggal sebenarnya
+      period: 'May 2025 – Present',
       description: [
         'Member of the DevSecOps division focusing on secure, reliable, and automated delivery.',
         'Shipped a ZTNA platform (Zrok-based) enabling zero-trust, policy-driven access with SSO/OIDC & audit trails.',
@@ -59,10 +59,10 @@ const Experience = () => {
         'Owned secure SDLC & pipelines: SAST/DAST, dependency & secret scanning, containerization, IaC.',
         'Improved observability & incident response (metrics/logs/traces, alerting, runbooks, post-incident reviews).',
       ],
-      stack: ['Next.js', 'Node.js/TS', 'FastApi', 'Kubernetes', 'CI/CD', 'Zrok (ZTNA)', 'MISP', 'Spiderfoot', 'OnionScan'],
+      stack: ['Next.js', 'Node.js/TS', 'FastAPI', 'Kubernetes', 'CI/CD', 'Zrok (ZTNA)', 'MISP', 'Spiderfoot', 'OnionScan'],
       isConfidential: true,
       logo: '/logos/tjakrabirawa.svg',
-      links: [], // biarkan kosong untuk role ini
+      links: [],
     },
 
     {
@@ -76,8 +76,7 @@ const Experience = () => {
       ],
       stack: ['Laravel', 'React', 'Node.js', 'PHP (Lumen)', 'MySQL', 'MongoDB', 'Docker', 'API Integrations'],
       logo: '/logos/jobseeker.png',
-      links: [
-      ],
+      links: [],
     },
 
     {

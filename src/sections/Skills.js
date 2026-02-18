@@ -65,7 +65,7 @@ const SkillCard = ({ skill }) => {
 
 const Skills = () => {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
-  const [showCoreOnly, setShowCoreOnly] = useState(false);
+  const [showCoreOnly, setShowCoreOnly] = useState(true);
 
   // accordion open state per kategori (mobile only)
   const [openMobile, setOpenMobile] = useState(() => new Set([0,1,2])); // default buka 3 pertama
@@ -85,63 +85,63 @@ const Skills = () => {
     {
       title: 'Core Languages',
       skills: [
-        { name: 'TypeScript', icon: SiTypescript, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'Jobseeker/Tjakrabirawa' },
-        { name: 'JavaScript', icon: FaJs, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'All' },
-        { name: 'Python', icon: FaPython, level: 'Intermediate', years: 1, lastUsed: '2025', mappedTo: 'Tjakrabirawa' },
-        { name: 'PHP', icon: FaPhp, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'Jobseeker' },
-        { name: 'HTML/CSS', icon: FaHtml5, level: 'Advanced', years: 4, lastUsed: '2025', mappedTo: 'All' },
+        { name: 'JavaScript', icon: FaJs, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'All Projects' },
+        { name: 'TypeScript', icon: SiTypescript, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'Enterprise Apps' },
+        { name: 'Python', icon: FaPython, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'Backend APIs' },
+        { name: 'PHP', icon: FaPhp, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'HRMS Platform' },
+        { name: 'HTML/CSS', icon: FaHtml5, level: 'Advanced', years: 4, lastUsed: '2025', mappedTo: 'All Projects' },
       ],
     },
     {
       title: 'Frontend',
       skills: [
-        { name: 'React.js / Next.js', icon: FaReact, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'All' },
-        { name: 'Vue.js', icon: FaVuejs, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'Hacktiv8' },
-        { name: 'jQuery', icon: SiJquery, level: 'Intermediate', years: 2, lastUsed: '2024', mappedTo: 'Jobseeker' },
+        { name: 'React.js / Next.js', icon: FaReact, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'Primary Framework' },
+        { name: 'Vue.js', icon: FaVuejs, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'Career Sites' },
+        { name: 'React Native', level: 'Intermediate', years: 1, lastUsed: '2024', isCore: true, mappedTo: 'Mobile Apps' },
+        { name: 'jQuery', icon: SiJquery, level: 'Intermediate', years: 2, lastUsed: '2024', mappedTo: 'Legacy Systems' },
       ],
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', icon: FaNode, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'All' },
-        { name: 'Express.js / Nest', icon: SiExpress, level: 'Advanced', years: 3, isCore: true, lastUsed: '2025', mappedTo: 'Jobseeker/Tjakrabirawa' },
-        { name: 'Laravel / Lumen', icon: SiLaravel, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'Jobseeker' },
-        { name: 'FastAPI', icon: SiFastapi, level: 'Familiar', years: 1, lastUsed: '2025', mappedTo: 'Tjakrabirawa' },
-        { name: 'Flask', icon: SiFlask, level: 'Familiar', years: 1, lastUsed: '2025', mappedTo: 'Tjakrabirawa' },
-        { name: 'GraphQL', icon: SiGraphql, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'Hacktiv8' },
-        { name: 'Sequelize / Prisma', icon: SiSequelize, level: 'Intermediate', years: 2, lastUsed: '2025' },
+        { name: 'Node.js', icon: FaNode, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'Primary Backend' },
+        { name: 'Express.js / NestJS', icon: SiExpress, level: 'Advanced', years: 3, isCore: true, lastUsed: '2025', mappedTo: 'REST APIs' },
+        { name: 'FastAPI', icon: SiFastapi, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'Python APIs' },
+        { name: 'Flask', icon: SiFlask, level: 'Intermediate', years: 1, lastUsed: '2025', mappedTo: 'Microservices' },
+        { name: 'Laravel / Lumen', icon: SiLaravel, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'HRMS Backend' },
+        { name: 'GraphQL', icon: SiGraphql, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'API Gateway' },
+        { name: 'Sequelize / Prisma', icon: SiSequelize, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'ORM' },
       ],
     },
     {
-      title: 'DevSecOps & Security',
+      title: 'Mobile Development',
       skills: [
-        { name: 'Docker', icon: FaDocker, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'All' },
-        { name: 'Kubernetes', icon: SiKubernetes, level: 'Intermediate', years: 2, lastUsed: '2024', mappedTo: 'Unsircle' },
-        { name: 'CI/CD (GitLab)', icon: SiGitlab, level: 'Advanced', years: 2, isCore: true , lastUsed: '2025' },
-        { name: 'RabbitMQ', icon: SiRabbitmq, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'Unsircle' },
+        { name: 'React Native', level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'Cross-platform' },
+      ],
+    },
+    {
+      title: 'DevOps & Infrastructure',
+      skills: [
+        { name: 'Docker', icon: FaDocker, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'Containerization' },
+        { name: 'Kubernetes', icon: SiKubernetes, level: 'Intermediate', years: 2, lastUsed: '2024', mappedTo: 'Orchestration' },
+        { name: 'CI/CD (GitLab)', icon: SiGitlab, level: 'Advanced', years: 2, isCore: true, lastUsed: '2025', mappedTo: 'Automation' },
+        { name: 'RabbitMQ', icon: SiRabbitmq, level: 'Intermediate', years: 1, lastUsed: '2024', mappedTo: 'Message Queue' },
       ],
     },
     {
       title: 'Databases & Cache',
       skills: [
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'All' },
-        { name: 'MySQL', icon: SiMysql, level: 'Advanced', years: 3, lastUsed: '2025', mappedTo: 'Jobseeker' },
-        { name: 'MongoDB', icon: SiMongodb, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'Jobseeker' },
-        { name: 'Redis', icon: SiRedis, level: 'Intermediate', years: 2, lastUsed: '2025' },
+        { name: 'PostgreSQL', icon: SiPostgresql, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'Primary DB' },
+        { name: 'MySQL', icon: SiMysql, level: 'Advanced', years: 3, lastUsed: '2025', isCore: true, mappedTo: 'HRMS Platform' },
+        { name: 'MongoDB', icon: SiMongodb, level: 'Advanced', years: 2, lastUsed: '2025', isCore: true, mappedTo: 'NoSQL' },
+        { name: 'Redis', icon: SiRedis, level: 'Intermediate', years: 2, lastUsed: '2025', mappedTo: 'Caching' },
       ],
     },
     {
       title: 'Cloud & Platforms',
       skills: [
-        { name: 'AWS', icon: FaAws, level: 'Familiar', years: 1, lastUsed: '2025' },
-        { name: 'Google Cloud', icon: SiGooglecloud, level: 'Familiar', years: 1, lastUsed: '2024' },
-      ],
-    },
-    {
-      title: 'Tools & Integrations',
-      skills: [
-        { name: 'Redis.io', icon: SiRedis, level: 'Intermediate', years: 2, lastUsed: '2025' },
-        { name: 'jQuery', icon: SiJquery, level: 'Familiar', years: 2, lastUsed: '2023' },
+        { name: 'AWS', icon: FaAws, level: 'Intermediate', years: 1, lastUsed: '2025' },
+        { name: 'Google Cloud', icon: SiGooglecloud, level: 'Intermediate', years: 1, lastUsed: '2024' },
       ],
     },
   ], []);
